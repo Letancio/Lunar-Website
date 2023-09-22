@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="public/custom.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7c366fa5c4.js" crossorigin="anonymous"></script>
+
+  <title>Lunar</title>
+</head>
+
+<body class="global text-white">
+  <nav class="navbar navbar-home shadow mb-3 text-white fixed">
+    <div class="container-fluid">
+      <a class="navbar-brand top-logo" href="#">
+        <i class="fa-solid fa-moon"></i>
+        Lunar
+      </a>
+      <div id="icon"></div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="container-text">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-sm-6">
+              <h1 class="title">Bem vindo ao Lunar</h1>
+              <span class="subtitle">Aprenda quais são as fases da Lua <p>e como elas influenciam na nossa vida</span>
+            </div>
+            <div class="col-sm-6">
+              <div class="lua_photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-moon">
+        <div class="fases-text-top">
+            <h3>Entenda as Fases da Lua:</h3>
+        </div>
+        <div class="container">
+            <div class="row align-items-start moon-text">
+                <div class="col-sm-6">
+                    <a data-bs-toggle="collapse" href="#luacheia" role="button" aria-expanded="false" aria-controls="luacheia" class="toggle-link">
+                        <img src="public/images/lua_cheia.webp" class="lua_sub">
+                    </a>
+                    <a data-bs-toggle="collapse" href="#luaminguante" role="button" aria-expanded="false" aria-controls="luaminguante" class="toggle-link">
+                        <img src="public/images/lua-crescente.webp" class="lua_sub">
+                    </a>
+                    <a data-bs-toggle="collapse" href="#luacrescente" role="button" aria-expanded="false" aria-controls="luacrescente" class="toggle-link">
+                        <img src="public/images/lua-minguante.webp" class="lua_sub">
+                    </a>
+                    <a data-bs-toggle="collapse" href="#luanova" role="button" aria-expanded="false" aria-controls="luanova" class="toggle-link">
+                        <img src="public/images/lua-nova.webp" class="lua_sub">
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="collapse" id="luacheia">
+                        <div class="text-dark">
+                            <p> Lua Cheia</p>
+                            Na fase da Lua cheia, a Terra está entre o Sol e a Lua, e conseguimos observar a totalidade do
+                            satélite iluminado integralmente pelo Sol.
+                            Nesta fase, a Lua nasce aproximadamente às 18 horas e se põe aproximadamente às 6 horas do dia
+                            seguinte.
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="luacrescente">
+                        <div class="text-dark">
+                            <p>Lua Crescente</p>
+                            A Lua crescente ou quarto crescente
+                            recebe esta denominação, pois neste momento só conseguimos observar ¼ de sua totalidade.
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="luaminguante">
+                        <div class="text-dark">
+                            <p>Lua Minguante</p>
+                            A Lua minguante ou quarto minguante é o último estágio das fases da Lua. Neste período, ela
+                            encontra-se no formato de um semicírculo e assim, novamente conseguimos observar ¼ de sua totalidade
+                            no sentido oposto da fase crescente.
+                            Nesta fase, a Lua nasce aproximadamente à meia-noite e se põe aproximadamente ao meio-dia.
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="luanova">
+                        <div class="text-dark">
+                            <p>Lua Nova</p>
+                            Nesta fase, não conseguimos observar a Lua pois ela está posicionada entre o Sol e a Terra e, por
+                            isso, não a vemos neste momento.
+                            Nesta fase, a Lua está no céu durante o dia, nascendo por volta das 6 horas e se pondo por volta das
+                            18 horas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script>
+          // Adicione um evento de clique para todos os links de colapso
+          $(".toggle-link").click(function () {
+              // Feche todos os elementos de colapso abertos
+              $(".collapse").collapse("hide");
+          });
+      </script>
+</body>
+
+</html>
